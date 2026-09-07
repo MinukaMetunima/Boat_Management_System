@@ -1,0 +1,188 @@
+/* ====================================================================
+   Sail Lanka Inspired Floating Navbar & Emergency Broadcast Ticker
+   ==================================================================== */
+
+/* Live Emergency Broadcast Ribbon */
+.emergency-ribbon {
+    background: linear-gradient(90deg, #991B1B, #DC2626, #B91C1C);
+    color: #FFFFFF;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+    z-index: 1001;
+    box-shadow: 0 2px 10px rgba(220, 38, 38, 0.35);
+}
+
+.emergency-ribbon.active {
+    display: flex;
+}
+
+.emergency-ribbon .pulse-dot {
+    width: 9px;
+    height: 9px;
+    background: #FEF08A;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(254, 240, 138, 0.7); }
+    70% { transform: scale(1.1); box-shadow: 0 0 0 6px rgba(254, 240, 138, 0); }
+    100% { transform: scale(0.9); }
+}
+
+/* Master Header / Navigation Bar */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.35s ease;
+    background: rgba(7, 24, 44, 0.75);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.site-header.scrolled {
+    background: rgba(7, 24, 44, 0.95);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
+}
+
+/* Logo */
+.site-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-symbol {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--champagne-gold), #E5A93C);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy-dark);
+    font-size: 20px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-title {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.logo-tagline {
+    font-size: 10.5px;
+    letter-spacing: 2px;
+    color: var(--champagne-gold);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #E2E8F0;
+    font-size: 14.5px;
+    font-weight: 500;
+    position: relative;
+    padding: 6px 0;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--champagne-gold);
+    transition: width 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #FFFFFF;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Right Actions */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    color: #FFFFFF;
+    font-size: 13.5px;
+}
+
+.user-pill:hover {
+    background: rgba(255, 255, 255, 0.18);
+    color: #FFFFFF;
+}
+
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .nav-links {
+        display: none;
+    }
+    .mobile-toggle {
+        display: block;
+    }
+}

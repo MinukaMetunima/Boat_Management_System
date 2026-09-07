@@ -1,0 +1,353 @@
+/* ====================================================================
+   Web-Based Boat Safari Trip Management System
+   Luxury Coastal Theme inspired by Sail Lanka Charter (sail-lanka-charter.com)
+   ==================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+
+:root {
+    /* Brand Nautical Colors */
+    --navy-dark: #07182c;
+    --navy-primary: #0B2545;
+    --navy-secondary: #134074;
+    --marine-blue: #0077B6;
+    --ocean-teal: #028090;
+    --lagoon-cyan: #00B4D8;
+    --champagne-gold: #D4AF37;
+    --gold-light: #F3E5AB;
+    --gold-accent: #E5A93C;
+
+    /* Semantic Status Colors */
+    --success: #10B981;
+    --success-bg: rgba(16, 185, 129, 0.12);
+    --warning: #F59E0B;
+    --warning-bg: rgba(245, 158, 11, 0.12);
+    --danger: #EF4444;
+    --danger-bg: rgba(239, 68, 68, 0.12);
+    --info: #3B82F6;
+    --info-bg: rgba(59, 130, 246, 0.12);
+
+    /* Surfaces & Neutrals */
+    --bg-main: #F4F7FB;
+    --bg-surface: #FFFFFF;
+    --bg-surface-elevated: #FFFFFF;
+    --text-main: #1E293B;
+    --text-muted: #64748B;
+    --text-light: #94A3B8;
+    --border-color: #E2E8F0;
+    --border-gold: rgba(212, 175, 55, 0.4);
+
+    /* Shadows & Glassmorphism */
+    --shadow-sm: 0 2px 8px rgba(11, 37, 69, 0.06);
+    --shadow-md: 0 8px 24px rgba(11, 37, 69, 0.09);
+    --shadow-lg: 0 16px 40px rgba(11, 37, 69, 0.14);
+    --shadow-gold: 0 8px 25px rgba(212, 175, 55, 0.25);
+    --glass-bg: rgba(255, 255, 255, 0.88);
+    --glass-blur: blur(14px);
+
+    /* Typography */
+    --font-heading: 'Outfit', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+    --font-body: 'Outfit', sans-serif;
+
+    /* Spacing & Radii */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+    --transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--navy-primary);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+a {
+    color: var(--marine-blue);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--champagne-gold);
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Button Component Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 22px;
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border-radius: var(--radius-full);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--navy-primary), var(--navy-secondary));
+    color: #FFFFFF;
+    box-shadow: 0 4px 14px rgba(11, 37, 69, 0.2);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--navy-secondary), var(--marine-blue));
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-gold {
+    background: linear-gradient(135deg, #E5A93C, #D4AF37);
+    color: #0B2545;
+    font-weight: 700;
+    box-shadow: var(--shadow-gold);
+}
+
+.btn-gold:hover {
+    background: linear-gradient(135deg, #F3BA4F, #E5A93C);
+    color: #07182c;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(212, 175, 55, 0.35);
+}
+
+.btn-outline-gold {
+    background: transparent;
+    border-color: var(--champagne-gold);
+    color: var(--champagne-gold);
+}
+
+.btn-outline-gold:hover {
+    background: var(--champagne-gold);
+    color: var(--navy-primary);
+    transform: translateY(-2px);
+}
+
+.btn-outline-navy {
+    background: transparent;
+    border-color: var(--navy-primary);
+    color: var(--navy-primary);
+}
+
+.btn-outline-navy:hover {
+    background: var(--navy-primary);
+    color: #FFFFFF;
+}
+
+.btn-danger {
+    background: var(--danger);
+    color: #FFFFFF;
+}
+
+.btn-danger:hover {
+    background: #DC2626;
+    color: #FFFFFF;
+}
+
+.btn-sm {
+    padding: 6px 14px;
+    font-size: 13px;
+}
+
+.btn-lg {
+    padding: 14px 30px;
+    font-size: 16px;
+}
+
+/* Badges */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-success { background: var(--success-bg); color: var(--success); }
+.badge-warning { background: var(--warning-bg); color: #B45309; }
+.badge-danger { background: var(--danger-bg); color: var(--danger); }
+.badge-info { background: var(--info-bg); color: var(--info); }
+.badge-primary { background: rgba(11, 37, 69, 0.1); color: var(--navy-primary); }
+.badge-gold { background: rgba(212, 175, 55, 0.15); color: #92400E; border: 1px solid var(--border-gold); }
+
+/* Luxury Cards */
+.card {
+    background: var(--bg-surface);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: rgba(212, 175, 55, 0.35);
+}
+
+.card-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border-color);
+    background: #FAFCFE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-body {
+    padding: 24px;
+}
+
+.card-footer {
+    padding: 16px 24px;
+    border-top: 1px solid var(--border-color);
+    background: #FAFCFE;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--navy-primary);
+}
+
+.form-control {
+    width: 100%;
+    padding: 11px 16px;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--text-main);
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: var(--marine-blue);
+    box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.15);
+}
+
+textarea.form-control {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Flash Messages */
+.flash-container {
+    position: fixed;
+    top: 80px;
+    right: 24px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 420px;
+}
+
+.alert {
+    padding: 14px 20px;
+    border-radius: var(--radius-md);
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    animation: slideIn 0.3s ease-out;
+}
+
+.alert-success {
+    background: #ECFDF5;
+    color: #065F46;
+    border-left: 4px solid var(--success);
+}
+
+.alert-danger {
+    background: #FEF2F2;
+    color: #991B1B;
+    border-left: 4px solid var(--danger);
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Table Design */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+}
+
+.data-table th {
+    background: #F1F5F9;
+    color: var(--navy-primary);
+    font-weight: 700;
+    padding: 12px 18px;
+    border-bottom: 2px solid var(--border-color);
+    white-space: nowrap;
+}
+
+.data-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-main);
+    vertical-align: middle;
+}
+
+.data-table tr:hover td {
+    background-color: #F8FAFD;
+}
