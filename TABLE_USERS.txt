@@ -1,0 +1,25 @@
+========================================================================================================================
+      Database: Microsoft SQL Server (SSMS) (boat_safari_db) | Live Connection Active
+      Total Records: 11 | Last Live Synced: 2026-09-21 19:15:27
+========================================================================================================================
+id         | full_name                                | email                         | password_hash                                                | phone           | role       | status     | profile_image                 | created_at                  | updated_at                 
+-----------+------------------------------------------+-------------------------------+--------------------------------------------------------------+-----------------+------------+------------+-------------------------------+-----------------------------+----------------------------
+1          | System Administrator                     | admin@sail-safari.lk          | 240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f7... | +94 77 123 4567 | ADMIN      | ACTIVE     | assets/img/default-avatar.png | 2026-09-21 18:27:20.2600000 | 2026-09-21 18:27:20.2600000
+2          | Chief Reservation Officer                | officer@sail-safari.lk        | 240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f7... | +94 77 234 5678 | OFFICER    | ACTIVE     | assets/img/default-avatar.png | 2026-09-21 18:27:20.2600000 | 2026-09-21 18:27:20.2600000
+3          | Safari Tour Operations Manager           | tourmanager@sail-safari.lk    | 240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f7... | +94 77 345 6789 | ADMIN      | ACTIVE     | assets/img/default-avatar.png | 2026-09-21 18:27:20.2600000 | 2026-09-21 18:27:20.2600000
+4          | Capt. Shantha Perera (Master Mariner)    | captain.perera@sail-safari.lk | 240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f7... | +94 77 456 7890 | CAPTAIN    | ACTIVE     | assets/img/default-avatar.png | 2026-09-21 18:27:20.2600000 | 2026-09-21 18:27:20.2600000
+5          | Capt. Ruwan Kumara (Catamaran Skipper)   | captain.kumara@sail-safari.lk | 240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f7... | +94 77 567 8901 | CAPTAIN    | ACTIVE     | assets/img/default-avatar.png | 2026-09-21 18:27:20.2600000 | 2026-09-21 18:27:20.2600000
+6          | Kasun Fernando (Marine Naturalist Guide) | guide.kasun@sail-safari.lk    | 240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f7... | +94 77 678 9012 | GUIDE      | ACTIVE     | assets/img/default-avatar.png | 2026-09-21 18:27:20.2600000 | 2026-09-21 18:27:20.2600000
+7          | Dilshan Silva (Snorkeling Guide)         | guide.dilshan@sail-safari.lk  | 240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f7... | +94 77 789 0123 | GUIDE      | ACTIVE     | assets/img/default-avatar.png | 2026-09-21 18:27:20.2600000 | 2026-09-21 18:27:20.2600000
+8          | Luxury Fleet Owner                       | owner@sail-safari.lk          | 240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f7... | +94 77 890 1234 | OWNER      | ACTIVE     | assets/img/default-avatar.png | 2026-09-21 18:27:20.2600000 | 2026-09-21 18:27:20.2600000
+9          | Chief Marine Engineer                    | maintenance@sail-safari.lk    | 240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f7... | +94 77 901 2345 | ADMIN      | ACTIVE     | assets/img/default-avatar.png | 2026-09-21 18:27:20.2600000 | 2026-09-21 18:27:20.2600000
+10         | David Miller (Tourist / Customer)        | david.miller@gmail.com        | ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4... | +44 7911 123456 | CUSTOMER   | ACTIVE     | assets/img/default-avatar.png | 2026-09-21 18:27:20.2600000 | 2026-09-21 18:27:20.2600000
+11         | Sarah Jenkins (Tourist / Customer)       | sarah.j@outlook.com           | ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4... | +61 412 345 678 | CUSTOMER   | ACTIVE     | assets/img/default-avatar.png | 2026-09-21 18:27:20.2600000 | 2026-09-21 18:27:20.2600000
+-----------+------------------------------------------+-------------------------------+--------------------------------------------------------------+-----------------+------------+------------+-------------------------------+-----------------------------+----------------------------
+Total Rows: 11
+
+------------------------------------------------------------------------------------------------------------------------
+RECENT REAL-TIME TRANSACTIONS & AUDIT LOG:
+------------------------------------------------------------------------------------------------------------------------
+  [2026-09-21 19:14:38] AUTH_LOGIN_SUCCESS | Record #1     | Auth state updated for admin@sail-safari.lk
+========================================================================================================================

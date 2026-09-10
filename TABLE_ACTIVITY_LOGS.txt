@@ -1,0 +1,54 @@
+========================================================================================================================
+      Database: Microsoft SQL Server (SSMS) (boat_safari_db) | Live Connection Active
+      Total Records: 40 | Last Live Synced: 2026-09-21 19:15:28
+========================================================================================================================
+id         | user_id    | action                          | module       | details                                                      | ip_address      | created_at                 
+-----------+------------+---------------------------------+--------------+--------------------------------------------------------------+-----------------+----------------------------
+1          | 1          | SYSTEM_INITIALIZATION           | SYSTEM       | Database seeded with default vessels, tours, users, and s... | 127.0.0.1       | 2026-09-21 18:27:20.4100000
+2          | 2          | BOOKING_CREATED                 | RESERVATIONS | Created reservation SLC-2026-0901 for David Miller with 2... | 127.0.0.1       | 2026-09-21 18:27:20.4100000
+3          | 1          | EMERGENCY_ALERT_POSTED          | EMERGENCY    | Broadcasted rough sea weather advisory for Southern Coast    | 127.0.0.1       | 2026-09-21 18:27:20.4100000
+4          | 10         | RESERVATION_UPDATED             | RESERVATIONS | Updated booking SLC-2026-0901 details before departure.      | 127.0.0.1       | 2026-09-21 18:39:31.7666667
+5          | 4          | PRE_TRIP_SAFETY_CHECK_SUBMITTED | SAFETY       | Captain submitted 'All Clear' pre-trip safety check for s... | 127.0.0.1       | 2026-09-21 18:39:34.7200000
+6          | 4          | SAFETY_CHECK_AMENDED            | SAFETY       | Safety check #3 re-verified and updated by Captain Capt. ... | 127.0.0.1       | 2026-09-21 18:39:34.8100000
+7          | 1          | SAFETY_CHECK_VOIDED             | SAFETY       | Safety check log #3 marked as VOIDED. Reason: Test schedu... | 127.0.0.1       | 2026-09-21 18:39:35.0733333
+8          | 10         | RESERVATION_UPDATED             | RESERVATIONS | Updated booking SLC-2026-0901 details before departure.      | 127.0.0.1       | 2026-09-21 18:40:41.0000000
+9          | 4          | PRE_TRIP_SAFETY_CHECK_SUBMITTED | SAFETY       | Captain submitted 'All Clear' pre-trip safety check for s... | 127.0.0.1       | 2026-09-21 18:40:42.4400000
+10         | 4          | SAFETY_CHECK_AMENDED            | SAFETY       | Safety check #4 re-verified and updated by Captain Capt. ... | 127.0.0.1       | 2026-09-21 18:40:42.6033333
+11         | 1          | SAFETY_CHECK_VOIDED             | SAFETY       | Safety check log #4 marked as VOIDED. Reason: Test schedu... | 127.0.0.1       | 2026-09-21 18:40:42.7400000
+12         | 10         | RESERVATION_UPDATED             | RESERVATIONS | Updated booking SLC-2026-0901 details before departure.      | 127.0.0.1       | 2026-09-21 18:41:20.2400000
+13         | 4          | PRE_TRIP_SAFETY_CHECK_SUBMITTED | SAFETY       | Captain submitted 'All Clear' pre-trip safety check for s... | 127.0.0.1       | 2026-09-21 18:41:21.7966667
+14         | 4          | SAFETY_CHECK_AMENDED            | SAFETY       | Safety check #5 re-verified and updated by Captain Capt. ... | 127.0.0.1       | 2026-09-21 18:41:21.8633333
+15         | 1          | SAFETY_CHECK_VOIDED             | SAFETY       | Safety check log #5 marked as VOIDED. Reason: Test schedu... | 127.0.0.1       | 2026-09-21 18:41:22.1566667
+16         | 1          | SQL_SERVER_CRUD_VERIFICATION    | SYSTEM       | Automated end-to-end CRUD suite verified all tables succe... | 127.0.0.1       | 2026-09-21 18:44:33.6533333
+17         | 1          | SQL_SERVER_CRUD_VERIFICATION    | SYSTEM       | Automated end-to-end CRUD suite verified all tables succe... | 127.0.0.1       | 2026-09-21 18:45:21.0633333
+18         | 10         | RESERVATION_UPDATED             | RESERVATIONS | Updated booking SLC-2026-0901 details before departure.      | 127.0.0.1       | 2026-09-21 18:45:37.2200000
+19         | 4          | PRE_TRIP_SAFETY_CHECK_SUBMITTED | SAFETY       | Captain submitted 'All Clear' pre-trip safety check for s... | 127.0.0.1       | 2026-09-21 18:45:38.2500000
+20         | 4          | SAFETY_CHECK_AMENDED            | SAFETY       | Safety check #8 re-verified and updated by Captain Capt. ... | 127.0.0.1       | 2026-09-21 18:45:38.3200000
+21         | 1          | SAFETY_CHECK_VOIDED             | SAFETY       | Safety check log #8 marked as VOIDED. Reason: Test schedu... | 127.0.0.1       | 2026-09-21 18:45:38.4700000
+22         | 1          | SQL_SERVER_CRUD_VERIFICATION    | SYSTEM       | Automated end-to-end CRUD suite verified all tables succe... | 127.0.0.1       | 2026-09-21 18:45:42.3200000
+23         | 10         | RESERVATION_UPDATED             | RESERVATIONS | Updated booking SLC-2026-0901 details before departure.      | 127.0.0.1       | 2026-09-21 18:49:40.4933333
+24         | 4          | PRE_TRIP_SAFETY_CHECK_SUBMITTED | SAFETY       | Captain submitted 'All Clear' pre-trip safety check for s... | 127.0.0.1       | 2026-09-21 18:49:43.6000000
+25         | 4          | SAFETY_CHECK_AMENDED            | SAFETY       | Safety check #10 re-verified and updated by Captain Capt.... | 127.0.0.1       | 2026-09-21 18:49:43.6433333
+26         | 1          | SAFETY_CHECK_VOIDED             | SAFETY       | Safety check log #10 marked as VOIDED. Reason: Test sched... | 127.0.0.1       | 2026-09-21 18:49:43.7566667
+27         | 10         | RESERVATION_UPDATED             | RESERVATIONS | Updated booking SLC-2026-0901 details before departure.      | 127.0.0.1       | 2026-09-21 18:50:20.8133333
+28         | 4          | PRE_TRIP_SAFETY_CHECK_SUBMITTED | SAFETY       | Captain submitted 'All Clear' pre-trip safety check for s... | 127.0.0.1       | 2026-09-21 18:50:22.1500000
+29         | 4          | SAFETY_CHECK_AMENDED            | SAFETY       | Safety check #11 re-verified and updated by Captain Capt.... | 127.0.0.1       | 2026-09-21 18:50:22.2133333
+30         | 1          | SAFETY_CHECK_VOIDED             | SAFETY       | Safety check log #11 marked as VOIDED. Reason: Test sched... | 127.0.0.1       | 2026-09-21 18:50:22.4133333
+31         | 1          | LOGIN_SUCCESS                   | AUTH         | User logged in successfully                                  | 0:0:0:0:0:0:0:1 | 2026-09-21 18:54:49.6800000
+32         | 11         | RESERVATION_CANCELLED           | RESERVATIONS | Cancelled booking SLC-2026-0902                              | 0:0:0:0:0:0:0:1 | 2026-09-21 19:06:52.6000000
+33         | 11         | PROFILE_UPDATED                 | USER         | User updated profile details                                 | 0:0:0:0:0:0:0:1 | 2026-09-21 19:09:58.1666667
+34         | 11         | PROFILE_UPDATED                 | USER         | User updated profile details                                 | 0:0:0:0:0:0:0:1 | 2026-09-21 19:10:26.6600000
+35         | 1          | RESERVATION_CREATED             | RESERVATIONS | Created booking SLC-2026-5193 for 6 guests.                  | 0:0:0:0:0:0:0:1 | 2026-09-21 19:11:55.5566667
+36         | 10         | RESERVATION_UPDATED             | RESERVATIONS | Updated booking SLC-2026-0901 details before departure.      | 127.0.0.1       | 2026-09-21 19:13:50.1200000
+37         | 4          | PRE_TRIP_SAFETY_CHECK_SUBMITTED | SAFETY       | Captain submitted 'All Clear' pre-trip safety check for s... | 127.0.0.1       | 2026-09-21 19:13:51.1966667
+38         | 4          | SAFETY_CHECK_AMENDED            | SAFETY       | Safety check #12 re-verified and updated by Captain Capt.... | 127.0.0.1       | 2026-09-21 19:13:51.2433333
+39         | 1          | SAFETY_CHECK_VOIDED             | SAFETY       | Safety check log #12 marked as VOIDED. Reason: Test sched... | 127.0.0.1       | 2026-09-21 19:13:51.3100000
+40         | 1          | LOGIN_SUCCESS                   | AUTH         | User logged in successfully                                  | 0:0:0:0:0:0:0:1 | 2026-09-21 19:14:37.6400000
+-----------+------------+---------------------------------+--------------+--------------------------------------------------------------+-----------------+----------------------------
+Total Rows: 40
+
+------------------------------------------------------------------------------------------------------------------------
+RECENT REAL-TIME TRANSACTIONS & AUDIT LOG:
+------------------------------------------------------------------------------------------------------------------------
+  [2026-09-21 19:14:38] INSERT   | Record #40    | Action=LOGIN_SUCCESS | Module=AUTH | Details=User logged in successfully | IP=0:0:0:0:0:0:0:1
+========================================================================================================================
