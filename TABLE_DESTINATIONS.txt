@@ -1,0 +1,19 @@
+========================================================================================================================
+      Database: Microsoft SQL Server (SSMS) (boat_safari_db) | Live Connection Active
+      Total Records: 5 | Last Live Synced: 2026-09-21 19:15:27
+========================================================================================================================
+id         | name                                       | region      | harbor_name                 | description                                                  | image_url                              | created_at                 
+-----------+--------------------------------------------+-------------+-----------------------------+--------------------------------------------------------------+----------------------------------------+----------------------------
+1          | Mirissa Bay & Deep Ocean Trench            | SOUTH_COAST | Mirissa Fishery Harbour     | Sri Lankaâ€™s premier whale and dolphin watching capital.... | assets/img/destinations/mirissa.jpg    | 2026-09-21 18:27:20.2700000
+2          | Galle Fort Heritage Coast                  | SOUTH_COAST | Galle International Harbour | UNESCO world heritage ramparts viewed from the turquoise ... | assets/img/destinations/galle.jpg      | 2026-09-21 18:27:20.2700000
+3          | Trincomalee Natural Harbor & Pigeon Island | EAST_COAST  | Trincomalee Cod Bay Pier    | World-famous coral reefs, blacktip reef sharks, and calm ... | assets/img/destinations/trinco.jpg     | 2026-09-21 18:27:20.2700000
+4          | Bentota Lagoon & Sea Route                 | WEST_COAST  | Bentota River Marina        | Scenic blend of riverine mangrove safari and offshore ope... | assets/img/destinations/bentota.jpg    | 2026-09-21 18:27:20.2700000
+5          | Passikudah Coral Bay                       | EAST_COAST  | Passikudah Outer Pier       | Shallow crystalline waters ideal for swimming, snorkeling... | assets/img/destinations/passikudah.jpg | 2026-09-21 18:27:20.2700000
+-----------+--------------------------------------------+-------------+-----------------------------+--------------------------------------------------------------+----------------------------------------+----------------------------
+Total Rows: 5
+
+------------------------------------------------------------------------------------------------------------------------
+RECENT REAL-TIME TRANSACTIONS & AUDIT LOG:
+------------------------------------------------------------------------------------------------------------------------
+  (Waiting for live transactions / operations...)
+========================================================================================================================

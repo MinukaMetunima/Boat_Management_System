@@ -1,0 +1,421 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sail Lanka | Luxury Ocean Safari & Catamaran Charters</title>
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Live Emergency Broadcast Ribbon -->
+<div id="emergencyRibbon" class="emergency-ribbon active">
+    <span class="pulse-dot"></span>
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <span id="emergencyRibbonText">
+        
+            
+                [HIGH] Department of Meteorology: Rough Seas Advisory for Southern Waters — Gusty winds up to 55 km/h and wave swells reaching 2.8m expected along the Mirissa to Galle coastal belt. Morning whale watching cruises proceed under caution; afternoon sailing departures suspended.
+            
+            
+        
+    </span>
+    <a href="/emergency" style="color: #FEF08A; text-decoration: underline; margin-left: 8px;">View All Alerts</a>
+</div>
+
+<!-- Floating Glassmorphic Master Navigation -->
+<header class="site-header">
+    <div class="container nav-wrapper">
+        <a href="/home" class="site-logo">
+            <div class="logo-symbol">
+                <i class="fa-solid fa-sailboat"></i>
+            </div>
+            <div class="logo-text">
+                <span class="logo-title">SAIL LANKA</span>
+                <span class="logo-tagline">LUXURY OCEAN SAFARI</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="/home"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="/experiences"><i class="fa-solid fa-compass"></i> Experiences</a></li>
+            <li><a href="/destinations"><i class="fa-solid fa-map-location-dot"></i> Destinations</a></li>
+            <li><a href="/boats"><i class="fa-solid fa-anchor"></i> Fleet</a></li>
+            <li><a href="/schedules"><i class="fa-regular fa-calendar-days"></i> Departures</a></li>
+            
+                <li><a href="/safety-checks"><i class="fa-solid fa-clipboard-check"></i> Safety Checks</a></li>
+            
+            <li><a href="/emergency"><i class="fa-solid fa-tower-broadcast"></i> Safety Alerts</a></li>
+            
+                <li><a href="/admin/dashboard" style="color: var(--champagne-gold); font-weight: 700;"><i class="fa-solid fa-gauge-high"></i> Back-Office</a></li>
+            
+        </ul>
+
+        <div class="nav-actions">
+            <a href="/booking" class="btn btn-gold btn-sm">
+                <i class="fa-solid fa-ticket"></i> Book Cruise
+            </a>
+
+            
+                
+                    
+                    <a href="/profile" class="user-pill" title="View Account">
+                        <i class="fa-solid fa-user-circle"></i>
+                        <span>System Administrator</span>
+                    </a>
+                    <a href="/logout" class="btn btn-outline-gold btn-sm" title="Log Out">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </a>
+                
+                
+            
+        </div>
+    </div>
+</header>
+
+<!-- Flash Alerts Container -->
+<div class="flash-container">
+    
+        <div class="alert alert-success">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Welcome back, System Administrator!</span>
+            <button onclick="this.parentElement.remove()" style="background:none; border:none; color:inherit; cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+    
+    
+</div>
+
+
+<div style="background: var(--navy-dark); padding: 120px 0 40px 0; color: #FFFFFF;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <div>
+            <div style="color: var(--champagne-gold); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;">
+                Operations & Management Center
+            </div>
+            <h1 style="font-size: 32px; color: #FFFFFF; margin-top: 4px;">Maritime Back-Office Dashboard</h1>
+            <p style="color: #94A3B8; font-size: 14px;">Logged in as: <strong>System Administrator</strong> (System Administrator)</p>
+        </div>
+        <div style="display: flex; gap: 12px;">
+            <a href="/admin/emergency/create" class="btn btn-danger btn-sm">
+                <i class="fa-solid fa-triangle-exclamation"></i> Issue Safety Alert
+            </a>
+            <a href="/admin/schedules/create" class="btn btn-gold btn-sm">
+                <i class="fa-solid fa-calendar-plus"></i> Schedule Departure
+            </a>
+        </div>
+    </div>
+</div>
+
+<section class="section" style="padding: 40px 0;">
+    <div class="container">
+        <!-- 6 Member Metric KPI Cards -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-bottom: 35px;">
+            <!-- Member 1: Tours -->
+            <div class="card" style="border-left: 4px solid var(--navy-primary);">
+                <div class="card-body" style="padding: 20px;">
+                    <div style="font-size: 12px; font-weight: 700; color: var(--text-light); text-transform: uppercase;">Member 1: Tours</div>
+                    <div style="font-size: 28px; font-weight: 800; color: var(--navy-primary); margin: 6px 0;">5</div>
+                    <a href="/admin/tours" style="font-size: 13px; font-weight: 600;">Manage Tours &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Member 2: Reservations -->
+            <div class="card" style="border-left: 4px solid var(--marine-blue);">
+                <div class="card-body" style="padding: 20px;">
+                    <div style="font-size: 12px; font-weight: 700; color: var(--text-light); text-transform: uppercase;">Member 2: Bookings</div>
+                    <div style="font-size: 28px; font-weight: 800; color: var(--marine-blue); margin: 6px 0;">4</div>
+                    <a href="/reservations" style="font-size: 13px; font-weight: 600;">View Bookings &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Member 3: Fleet -->
+            <div class="card" style="border-left: 4px solid var(--ocean-teal);">
+                <div class="card-body" style="padding: 20px;">
+                    <div style="font-size: 12px; font-weight: 700; color: var(--text-light); text-transform: uppercase;">Member 3: Fleet</div>
+                    <div style="font-size: 28px; font-weight: 800; color: var(--ocean-teal); margin: 6px 0;">5</div>
+                    <a href="/admin/boats" style="font-size: 13px; font-weight: 600;">Manage Vessels &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Member 4: Maintenance -->
+            <div class="card" style="border-left: 4px solid #D97706;">
+                <div class="card-body" style="padding: 20px;">
+                    <div style="font-size: 12px; font-weight: 700; color: var(--text-light); text-transform: uppercase;">Member 4: Repairs</div>
+                    <div style="font-size: 20px; font-weight: 800; color: #D97706; margin: 10px 0 6px 0;">LKR 130000.0</div>
+                    <a href="/admin/maintenance" style="font-size: 13px; font-weight: 600;">Maintenance Log &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Member 5: Emergency Alerts -->
+            <div class="card" style="border-left: 4px solid var(--danger);">
+                <div class="card-body" style="padding: 20px;">
+                    <div style="font-size: 12px; font-weight: 700; color: var(--text-light); text-transform: uppercase;">Member 5: Alerts</div>
+                    <div style="font-size: 28px; font-weight: 800; color: var(--danger); margin: 6px 0;">1</div>
+                    <a href="/admin/emergency" style="font-size: 13px; font-weight: 600;">Safety Notices &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Member 6: Promotions -->
+            <div class="card" style="border-left: 4px solid var(--champagne-gold);">
+                <div class="card-body" style="padding: 20px;">
+                    <div style="font-size: 12px; font-weight: 700; color: var(--text-light); text-transform: uppercase;">Member 6: Promos</div>
+                    <div style="font-size: 28px; font-weight: 800; color: var(--champagne-gold); margin: 6px 0;">4</div>
+                    <a href="/admin/promotions" style="font-size: 13px; font-weight: 600;">Campaigns &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar to 6 Module Consoles -->
+        <div class="card" style="margin-bottom: 35px; background: #FFFFFF; border: 1px solid var(--border-gold);">
+            <div class="card-body" style="padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                <span style="font-weight: 700; color: var(--navy-primary); font-size: 14px;"><i class="fa-solid fa-cubes"></i> 6 Group Modules:</span>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                    <a href="/admin/tours" class="btn btn-outline-navy btn-sm"><i class="fa-solid fa-compass"></i> M1: Tours</a>
+                    <a href="/reservations" class="btn btn-outline-navy btn-sm"><i class="fa-solid fa-receipt"></i> M2: Reservations</a>
+                    <a href="/admin/boats" class="btn btn-outline-navy btn-sm"><i class="fa-solid fa-sailboat"></i> M3: Fleet</a>
+                    <a href="/admin/maintenance" class="btn btn-outline-navy btn-sm"><i class="fa-solid fa-screwdriver-wrench"></i> M4: Maintenance</a>
+                    <a href="/safety-checks" class="btn btn-outline-navy btn-sm"><i class="fa-solid fa-clipboard-check"></i> M4: Safety Checks</a>
+                    <a href="/admin/emergency" class="btn btn-outline-navy btn-sm"><i class="fa-solid fa-tower-broadcast"></i> M5: Safety Alerts</a>
+                    <a href="/admin/promotions" class="btn btn-outline-navy btn-sm"><i class="fa-solid fa-tags"></i> M6: Promotions</a>
+                    
+                        <a href="/admin/users" class="btn btn-gold btn-sm"><i class="fa-solid fa-users-gear"></i> Common: Users</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Dual Column: Recent Bookings & Audit Trail -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px;">
+            <!-- Recent Reservations Table -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 style="font-size: 16px; margin: 0;"><i class="fa-solid fa-receipt"></i> Recent Customer Reservations</h3>
+                    <a href="/reservations" style="font-size: 13px; font-weight: 600;">View All</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Booking Ref</th>
+                                <th>Guest</th>
+                                <th>Tour</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                                <tr>
+                                    <td><strong style="color: var(--marine-blue);">BK-TEST-999</strong></td>
+                                    <td>David Miller (Tourist / Customer)</td>
+                                    <td>Test Delete Safari Tour</td>
+                                    <td><strong>LKR 27,000.00</strong></td>
+                                    <td><span class="badge badge-success">Confirmed & Ticket Issued</span></td>
+                                </tr>
+                            
+                                <tr>
+                                    <td><strong style="color: var(--marine-blue);">SLC-2026-1387</strong></td>
+                                    <td>Chamath Pereira</td>
+                                    <td>Mirissa Blue Whale & Dolphin Luxury Catamaran Safari</td>
+                                    <td><strong>LKR 20,825.00</strong></td>
+                                    <td><span class="badge badge-success">Confirmed & Ticket Issued</span></td>
+                                </tr>
+                            
+                                <tr>
+                                    <td><strong style="color: var(--marine-blue);">SLC-2026-0902</strong></td>
+                                    <td>Sarah Jenkins (Tourist / Customer)</td>
+                                    <td>Galle Fort Heritage & Sunset Champagne Sail</td>
+                                    <td><strong>LKR 33,500.00</strong></td>
+                                    <td><span class="badge badge-success">Confirmed & Ticket Issued</span></td>
+                                </tr>
+                            
+                                <tr>
+                                    <td><strong style="color: var(--marine-blue);">SLC-2026-0901</strong></td>
+                                    <td>David Miller (Tourist / Customer)</td>
+                                    <td>Mirissa Blue Whale & Dolphin Luxury Catamaran Safari</td>
+                                    <td><strong>LKR 41,650.00</strong></td>
+                                    <td><span class="badge badge-success">Confirmed & Ticket Issued</span></td>
+                                </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Audit Trail Logs -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 style="font-size: 16px; margin: 0;"><i class="fa-solid fa-shield-halved"></i> Activity Audit Trail</h3>
+                </div>
+                <div class="card-body" style="padding: 16px;">
+                    <ul style="list-style: none; font-size: 13px;">
+                        
+                            <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span class="badge badge-primary">AUTH</span>
+                                    <span style="font-size: 11px; color: var(--text-light);">2026-09-16 04:55:10.0</span>
+                                </div>
+                                <div style="color: var(--text-main);">User logged in successfully</div>
+                            </li>
+                        
+                            <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span class="badge badge-primary">AUTH</span>
+                                    <span style="font-size: 11px; color: var(--text-light);">2026-09-16 04:49:36.0</span>
+                                </div>
+                                <div style="color: var(--text-main);">User logged in successfully</div>
+                            </li>
+                        
+                            <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span class="badge badge-primary">SAFETY</span>
+                                    <span style="font-size: 11px; color: var(--text-light);">2026-09-16 04:44:00.0</span>
+                                </div>
+                                <div style="color: var(--text-main);">Safety check log #10 marked as VOIDED. Reason: Test schedule rescheduled</div>
+                            </li>
+                        
+                            <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span class="badge badge-primary">SAFETY</span>
+                                    <span style="font-size: 11px; color: var(--text-light);">2026-09-16 04:44:00.0</span>
+                                </div>
+                                <div style="color: var(--text-main);">Safety check #10 re-verified and updated by Captain Capt. Shantha Perera</div>
+                            </li>
+                        
+                            <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span class="badge badge-primary">SAFETY</span>
+                                    <span style="font-size: 11px; color: var(--text-light);">2026-09-16 04:44:00.0</span>
+                                </div>
+                                <div style="color: var(--text-main);">Captain submitted 'All Clear' pre-trip safety check for schedule #2 (Vessel #1)</div>
+                            </li>
+                        
+                            <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span class="badge badge-primary">RESERVATIONS</span>
+                                    <span style="font-size: 11px; color: var(--text-light);">2026-09-16 04:43:59.0</span>
+                                </div>
+                                <div style="color: var(--text-main);">Updated booking SLC-2026-0901 details before departure.</div>
+                            </li>
+                        
+                            <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span class="badge badge-primary">AUTH</span>
+                                    <span style="font-size: 11px; color: var(--text-light);">2026-09-16 03:19:56.0</span>
+                                </div>
+                                <div style="color: var(--text-main);">Failed login attempt for: minu@m.lk</div>
+                            </li>
+                        
+                            <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span class="badge badge-primary">AUTH</span>
+                                    <span style="font-size: 11px; color: var(--text-light);">2026-09-16 03:01:11.0</span>
+                                </div>
+                                <div style="color: var(--text-main);">User logged in successfully</div>
+                            </li>
+                        
+                            <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span class="badge badge-primary">SAFETY</span>
+                                    <span style="font-size: 11px; color: var(--text-light);">2026-09-16 02:49:13.0</span>
+                                </div>
+                                <div style="color: var(--text-main);">Safety check log #9 marked as VOIDED. Reason: Test schedule rescheduled</div>
+                            </li>
+                        
+                            <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span class="badge badge-primary">SAFETY</span>
+                                    <span style="font-size: 11px; color: var(--text-light);">2026-09-16 02:49:13.0</span>
+                                </div>
+                                <div style="color: var(--text-main);">Safety check #9 re-verified and updated by Captain Capt. Shantha Perera</div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Master Luxury Nautical Footer -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="site-logo" style="margin-bottom: 18px;">
+                <div class="logo-symbol">
+                    <i class="fa-solid fa-sailboat"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title" style="color: #FFFFFF;">SAIL LANKA</span>
+                    <span class="logo-tagline" style="color: var(--champagne-gold);">LUXURY OCEAN SAFARI</span>
+                </div>
+            </div>
+            <p>
+                Inspired by Sri Lanka's leading private sailing operator, Sail Lanka Charter. We curate world-class catamaran wildlife safaris, deep pelagic blue whale voyages, and romantic coastal expeditions across Sri Lanka's azure coastlines.
+            </p>
+            <p style="font-size: 12.5px; color: var(--champagne-gold);">
+                <i class="fa-solid fa-shield-halved"></i> Licensed by Sri Lanka Merchant Shipping Secretariat & Department of Wildlife Conservation.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Coastal Ports</h4>
+            <ul class="footer-links">
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Mirissa Harbour</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Galle International Port</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Trincomalee Cod Bay</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Bentota River Marina</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Passikudah Outer Bay</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="/experiences"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Safari Experiences</a></li>
+                <li><a href="/boats"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Catamaran Fleet</a></li>
+                <li><a href="/schedules"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Live Departures</a></li>
+                <li><a href="/promotions"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Special Offers</a></li>
+                <li><a href="/emergency"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Safety Advisories</a></li>
+                <li><a href="/login"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Staff Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>SE2030 Project Team</h4>
+            <p style="margin-bottom: 10px; font-weight: 600; color: #FFFFFF;">Group Y2-S1-MLB-B8G1-09</p>
+            <ul class="member-list">
+                <li><strong>Safari Tour Operations Manager</strong> (Member 1) - Safari Tour Management</li>
+                <li><strong>Reservation & Guest Booking Manager</strong> (Member 2) - Reservation Management</li>
+                <li><strong>Boat Fleet & Vessel Manager</strong> (Member 3) - Boat Fleet Management</li>
+                <li><strong>Boat Maintenance & Service Manager</strong> (Member 4) - Maintenance Management</li>
+                <li><strong>Maritime Safety & Emergency Notice Manager</strong> (Member 5) - Emergency Notices</li>
+                <li><strong>Promotion & Discount Strategy Manager</strong> (Member 6) - Promotion & Discounts</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        <div>
+            &copy; 2026 Web-Based Boat Safari Trip Management System | SLIIT Software Engineering. All rights reserved.
+        </div>
+        <div>
+            Built with Java Jakarta EE, JSTL, and Vanilla CSS & JS.
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/common.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,818 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sail Lanka | Luxury Ocean Safari & Catamaran Charters</title>
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Live Emergency Broadcast Ribbon -->
+<div id="emergencyRibbon" class="emergency-ribbon ">
+    <span class="pulse-dot"></span>
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <span id="emergencyRibbonText">
+        
+            
+            
+                Marine Advisory Broadcast System Active
+            
+        
+    </span>
+    <a href="/emergency" style="color: #FEF08A; text-decoration: underline; margin-left: 8px;">View All Alerts</a>
+</div>
+
+<!-- Floating Glassmorphic Master Navigation -->
+<header class="site-header">
+    <div class="container nav-wrapper">
+        <a href="/home" class="site-logo">
+            <div class="logo-symbol">
+                <i class="fa-solid fa-sailboat"></i>
+            </div>
+            <div class="logo-text">
+                <span class="logo-title">SAIL LANKA</span>
+                <span class="logo-tagline">LUXURY OCEAN SAFARI</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="/home"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="/experiences"><i class="fa-solid fa-compass"></i> Experiences</a></li>
+            <li><a href="/destinations"><i class="fa-solid fa-map-location-dot"></i> Destinations</a></li>
+            <li><a href="/boats"><i class="fa-solid fa-anchor"></i> Fleet</a></li>
+            <li><a href="/schedules"><i class="fa-regular fa-calendar-days"></i> Departures</a></li>
+            
+                <li><a href="/safety-checks"><i class="fa-solid fa-clipboard-check"></i> Safety Checks</a></li>
+            
+            <li><a href="/emergency"><i class="fa-solid fa-tower-broadcast"></i> Safety Alerts</a></li>
+            
+                <li><a href="/admin/dashboard" style="color: var(--champagne-gold); font-weight: 700;"><i class="fa-solid fa-gauge-high"></i> Back-Office</a></li>
+            
+        </ul>
+
+        <div class="nav-actions">
+            <a href="/booking" class="btn btn-gold btn-sm">
+                <i class="fa-solid fa-ticket"></i> Book Cruise
+            </a>
+
+            
+                
+                    
+                    <a href="/profile" class="user-pill" title="View Account">
+                        <i class="fa-solid fa-user-circle"></i>
+                        <span>System Administrator</span>
+                    </a>
+                    <a href="/logout" class="btn btn-outline-gold btn-sm" title="Log Out">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </a>
+                
+                
+            
+        </div>
+    </div>
+</header>
+
+<!-- Flash Alerts Container -->
+<div class="flash-container">
+    
+    
+</div>
+
+
+<div class="container" style="padding: 40px 20px;">
+    <!-- Page Header -->
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; flex-wrap: wrap; gap: 20px;">
+        <div>
+            <div style="font-size: 13px; font-weight: 700; color: var(--gold-primary); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">
+                <i class="fa-solid fa-clipboard-check"></i> Member 4: Maritime Safety & Fleet Readiness
+            </div>
+            <h1 style="font-size: 32px; font-weight: 700; color: var(--navy-dark); margin: 0;">
+                Pre-Trip Safety Check Logs
+            </h1>
+            <p style="color: var(--text-muted); margin: 6px 0 0 0; font-size: 15px;">
+                Official captain safety checklists, SOLAS equipment verification, fuel adequacy, and departure clearance.
+            </p>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="/admin/maintenance" class="btn btn-outline-navy">
+                <i class="fa-solid fa-wrench"></i> Dockyard Maintenance
+            </a>
+            <a href="/safety-checks/create" class="btn btn-primary">
+                <i class="fa-solid fa-square-check"></i> New Pre-Trip Safety Check
+            </a>
+        </div>
+    </div>
+
+    <!-- Alert Messages -->
+    
+    
+
+    <!-- Pre-Departure Readiness Notice Banner -->
+    <div style="background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 100%); color: #FFFFFF; border-radius: 12px; padding: 22px 28px; margin-bottom: 35px; box-shadow: var(--shadow-md);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
+            <div style="display: flex; align-items: center; gap: 18px;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(197, 168, 128, 0.2); display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--gold-light);">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                    <h3 style="color: #FFFFFF; margin: 0 0 4px 0; font-size: 18px;">Merchant Shipping Safety Protocol Compliance</h3>
+                    <p style="margin: 0; color: rgba(255,255,255,0.75); font-size: 14px;">
+                        No vessel is permitted to depart without a validated Captain "All Clear" safety log recorded within 2 hours prior to departure.
+                    </p>
+                </div>
+            </div>
+            <a href="/safety-checks/create" class="btn btn-gold" style="white-space: nowrap;">
+                <i class="fa-solid fa-check-double"></i> Perform Clearance Check
+            </a>
+        </div>
+    </div>
+
+    <!-- Safety Check Logs Table Card -->
+    <div class="card" style="padding: 0; overflow: hidden;">
+        <div style="padding: 20px 25px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+            <h2 style="font-size: 18px; margin: 0; font-weight: 700; color: var(--navy-dark);">
+                Recorded Safety Inspections (11)
+            </h2>
+            <span style="font-size: 13px; color: var(--text-light);">Showing latest pre-trip verifications</span>
+        </div>
+
+        <div style="overflow-x: auto;">
+            <table class="table" style="margin-bottom: 0;">
+                <thead>
+                    <tr>
+                        <th>Log ID</th>
+                        <th>Vessel & Departure</th>
+                        <th>Inspecting Captain</th>
+                        <th>Fuel & Life Jackets</th>
+                        <th>Weather Conditions</th>
+                        <th>Readiness Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        <tr>
+                            <td>
+                                <strong>#998</strong>
+                                <div style="font-size: 11px; color: var(--text-light); margin-top: 3px;">
+                                    2026-09-16 04:57
+                                </div>
+                            </td>
+                            <td>
+                                <div style="font-weight: 600; color: var(--navy-dark);">
+                                    Ocean Pearl (Ceycat 55)
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted);">
+                                    Mirissa Blue Whale &amp; Dolphin Luxury Catamaran Safari
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-user-tie" style="color: var(--gold-primary); margin-right: 4px;"></i>
+                                Capt. Shantha Perera (Master Mariner)
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="badge badge-success">
+                                        <i class="fa-solid fa-gas-pump"></i> 100% Fuel
+                                    </span>
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                                    <i class="fa-solid fa-life-ring"></i> 30 SOLAS Vests
+                                </div>
+                            </td>
+                            <td>
+                                <div style="max-width: 250px; font-size: 13px; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Fair skies">
+                                    Fair skies
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge badge-success">
+                                    Ready for Departure
+                                </span>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px;">
+                                    <a href="/safety-checks/view?id=998" class="btn btn-outline-navy btn-sm" title="View Safety Certificate">
+                                        <i class="fa-solid fa-file-shield"></i> View
+                                    </a>
+                                    
+                                        <a href="/safety-checks/edit?id=998" class="btn btn-outline-gold btn-sm" title="Amend / Re-check">
+                                            <i class="fa-solid fa-pen"></i> Amend
+                                        </a>
+                                        <form method="POST" action="/safety-checks/void" style="display: inline;" onsubmit="return confirm('Are you sure you want to VOID this safety check?');">
+                                            <input type="hidden" name="csrf_token" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="csrfToken" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="id" value="998">
+                                            <button type="submit" class="btn btn-outline-danger btn-sm" title="Void Entry">
+                                                <i class="fa-solid fa-ban"></i> Void
+                                            </button>
+                                        </form>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <strong>#10</strong>
+                                <div style="font-size: 11px; color: var(--text-light); margin-top: 3px;">
+                                    2026-09-15 23:14
+                                </div>
+                            </td>
+                            <td>
+                                <div style="font-weight: 600; color: var(--navy-dark);">
+                                    Ocean Pearl (Ceycat 55)
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted);">
+                                    Mirissa Blue Whale &amp; Dolphin Luxury Catamaran Safari
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-user-tie" style="color: var(--gold-primary); margin-right: 4px;"></i>
+                                Capt. Shantha Perera (Master Mariner)
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="badge badge-success">
+                                        <i class="fa-solid fa-gas-pump"></i> 100% Fuel
+                                    </span>
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                                    <i class="fa-solid fa-life-ring"></i> 30 SOLAS Vests
+                                </div>
+                            </td>
+                            <td>
+                                <div style="max-width: 250px; font-size: 13px; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Calm seas, swell 0.6m, visibility 15nm, clear skies">
+                                    Calm seas, swell 0.6m, visibility 15nm, clear skies
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge badge-danger">
+                                    Voided / Cancelled
+                                </span>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px;">
+                                    <a href="/safety-checks/view?id=10" class="btn btn-outline-navy btn-sm" title="View Safety Certificate">
+                                        <i class="fa-solid fa-file-shield"></i> View
+                                    </a>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <strong>#9</strong>
+                                <div style="font-size: 11px; color: var(--text-light); margin-top: 3px;">
+                                    2026-09-15 21:19
+                                </div>
+                            </td>
+                            <td>
+                                <div style="font-weight: 600; color: var(--navy-dark);">
+                                    Ocean Pearl (Ceycat 55)
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted);">
+                                    Mirissa Blue Whale &amp; Dolphin Luxury Catamaran Safari
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-user-tie" style="color: var(--gold-primary); margin-right: 4px;"></i>
+                                Capt. Shantha Perera (Master Mariner)
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="badge badge-success">
+                                        <i class="fa-solid fa-gas-pump"></i> 100% Fuel
+                                    </span>
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                                    <i class="fa-solid fa-life-ring"></i> 30 SOLAS Vests
+                                </div>
+                            </td>
+                            <td>
+                                <div style="max-width: 250px; font-size: 13px; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Calm seas, swell 0.6m, visibility 15nm, clear skies">
+                                    Calm seas, swell 0.6m, visibility 15nm, clear skies
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge badge-danger">
+                                    Voided / Cancelled
+                                </span>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px;">
+                                    <a href="/safety-checks/view?id=9" class="btn btn-outline-navy btn-sm" title="View Safety Certificate">
+                                        <i class="fa-solid fa-file-shield"></i> View
+                                    </a>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <strong>#8</strong>
+                                <div style="font-size: 11px; color: var(--text-light); margin-top: 3px;">
+                                    2026-09-15 21:13
+                                </div>
+                            </td>
+                            <td>
+                                <div style="font-weight: 600; color: var(--navy-dark);">
+                                    Ocean Pearl (Ceycat 55)
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted);">
+                                    Mirissa Blue Whale &amp; Dolphin Luxury Catamaran Safari
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-user-tie" style="color: var(--gold-primary); margin-right: 4px;"></i>
+                                Capt. Shantha Perera (Master Mariner)
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="badge badge-success">
+                                        <i class="fa-solid fa-gas-pump"></i> 100% Fuel
+                                    </span>
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                                    <i class="fa-solid fa-life-ring"></i> 30 SOLAS Vests
+                                </div>
+                            </td>
+                            <td>
+                                <div style="max-width: 250px; font-size: 13px; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Calm seas, swell 0.6m, visibility 15nm, clear skies">
+                                    Calm seas, swell 0.6m, visibility 15nm, clear skies
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge badge-danger">
+                                    Voided / Cancelled
+                                </span>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px;">
+                                    <a href="/safety-checks/view?id=8" class="btn btn-outline-navy btn-sm" title="View Safety Certificate">
+                                        <i class="fa-solid fa-file-shield"></i> View
+                                    </a>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <strong>#7</strong>
+                                <div style="font-size: 11px; color: var(--text-light); margin-top: 3px;">
+                                    2026-09-15 20:31
+                                </div>
+                            </td>
+                            <td>
+                                <div style="font-weight: 600; color: var(--navy-dark);">
+                                    Ocean Pearl (Ceycat 55)
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted);">
+                                    Mirissa Blue Whale &amp; Dolphin Luxury Catamaran Safari
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-user-tie" style="color: var(--gold-primary); margin-right: 4px;"></i>
+                                Capt. Shantha Perera (Master Mariner)
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="badge badge-success">
+                                        <i class="fa-solid fa-gas-pump"></i> 100% Fuel
+                                    </span>
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                                    <i class="fa-solid fa-life-ring"></i> 30 SOLAS Vests
+                                </div>
+                            </td>
+                            <td>
+                                <div style="max-width: 250px; font-size: 13px; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Calm seas, swell 0.6m, visibility 15nm, clear skies">
+                                    Calm seas, swell 0.6m, visibility 15nm, clear skies
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge badge-danger">
+                                    Voided / Cancelled
+                                </span>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px;">
+                                    <a href="/safety-checks/view?id=7" class="btn btn-outline-navy btn-sm" title="View Safety Certificate">
+                                        <i class="fa-solid fa-file-shield"></i> View
+                                    </a>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <strong>#6</strong>
+                                <div style="font-size: 11px; color: var(--text-light); margin-top: 3px;">
+                                    2026-09-15 20:25
+                                </div>
+                            </td>
+                            <td>
+                                <div style="font-weight: 600; color: var(--navy-dark);">
+                                    Ocean Pearl (Ceycat 55)
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted);">
+                                    Mirissa Blue Whale &amp; Dolphin Luxury Catamaran Safari
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-user-tie" style="color: var(--gold-primary); margin-right: 4px;"></i>
+                                Capt. Shantha Perera (Master Mariner)
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="badge badge-success">
+                                        <i class="fa-solid fa-gas-pump"></i> 100% Fuel
+                                    </span>
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                                    <i class="fa-solid fa-life-ring"></i> 30 SOLAS Vests
+                                </div>
+                            </td>
+                            <td>
+                                <div style="max-width: 250px; font-size: 13px; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Calm seas, swell 0.6m, visibility 15nm, clear skies">
+                                    Calm seas, swell 0.6m, visibility 15nm, clear skies
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge badge-danger">
+                                    Voided / Cancelled
+                                </span>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px;">
+                                    <a href="/safety-checks/view?id=6" class="btn btn-outline-navy btn-sm" title="View Safety Certificate">
+                                        <i class="fa-solid fa-file-shield"></i> View
+                                    </a>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <strong>#5</strong>
+                                <div style="font-size: 11px; color: var(--text-light); margin-top: 3px;">
+                                    2026-09-15 19:46
+                                </div>
+                            </td>
+                            <td>
+                                <div style="font-weight: 600; color: var(--navy-dark);">
+                                    Ocean Pearl (Ceycat 55)
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted);">
+                                    Mirissa Blue Whale &amp; Dolphin Luxury Catamaran Safari
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-user-tie" style="color: var(--gold-primary); margin-right: 4px;"></i>
+                                Capt. Shantha Perera (Master Mariner)
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="badge badge-success">
+                                        <i class="fa-solid fa-gas-pump"></i> 100% Fuel
+                                    </span>
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                                    <i class="fa-solid fa-life-ring"></i> 30 SOLAS Vests
+                                </div>
+                            </td>
+                            <td>
+                                <div style="max-width: 250px; font-size: 13px; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Calm seas, swell 0.6m, visibility 15nm, clear skies">
+                                    Calm seas, swell 0.6m, visibility 15nm, clear skies
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge badge-danger">
+                                    Voided / Cancelled
+                                </span>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px;">
+                                    <a href="/safety-checks/view?id=5" class="btn btn-outline-navy btn-sm" title="View Safety Certificate">
+                                        <i class="fa-solid fa-file-shield"></i> View
+                                    </a>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <strong>#4</strong>
+                                <div style="font-size: 11px; color: var(--text-light); margin-top: 3px;">
+                                    2026-09-15 19:10
+                                </div>
+                            </td>
+                            <td>
+                                <div style="font-weight: 600; color: var(--navy-dark);">
+                                    Ocean Pearl (Ceycat 55)
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted);">
+                                    Mirissa Blue Whale &amp; Dolphin Luxury Catamaran Safari
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-user-tie" style="color: var(--gold-primary); margin-right: 4px;"></i>
+                                Capt. Shantha Perera (Master Mariner)
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="badge badge-success">
+                                        <i class="fa-solid fa-gas-pump"></i> 100% Fuel
+                                    </span>
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                                    <i class="fa-solid fa-life-ring"></i> 30 SOLAS Vests
+                                </div>
+                            </td>
+                            <td>
+                                <div style="max-width: 250px; font-size: 13px; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Calm seas, swell 0.6m, visibility 15nm, clear skies">
+                                    Calm seas, swell 0.6m, visibility 15nm, clear skies
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge badge-danger">
+                                    Voided / Cancelled
+                                </span>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px;">
+                                    <a href="/safety-checks/view?id=4" class="btn btn-outline-navy btn-sm" title="View Safety Certificate">
+                                        <i class="fa-solid fa-file-shield"></i> View
+                                    </a>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <strong>#3</strong>
+                                <div style="font-size: 11px; color: var(--text-light); margin-top: 3px;">
+                                    2026-09-15 19:07
+                                </div>
+                            </td>
+                            <td>
+                                <div style="font-weight: 600; color: var(--navy-dark);">
+                                    Ocean Pearl (Ceycat 55)
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted);">
+                                    Mirissa Blue Whale &amp; Dolphin Luxury Catamaran Safari
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-user-tie" style="color: var(--gold-primary); margin-right: 4px;"></i>
+                                Capt. Shantha Perera (Master Mariner)
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="badge badge-success">
+                                        <i class="fa-solid fa-gas-pump"></i> 100% Fuel
+                                    </span>
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                                    <i class="fa-solid fa-life-ring"></i> 30 SOLAS Vests
+                                </div>
+                            </td>
+                            <td>
+                                <div style="max-width: 250px; font-size: 13px; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Calm seas, swell 0.6m, visibility 15nm, clear skies">
+                                    Calm seas, swell 0.6m, visibility 15nm, clear skies
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge badge-danger">
+                                    Voided / Cancelled
+                                </span>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px;">
+                                    <a href="/safety-checks/view?id=3" class="btn btn-outline-navy btn-sm" title="View Safety Certificate">
+                                        <i class="fa-solid fa-file-shield"></i> View
+                                    </a>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <strong>#2</strong>
+                                <div style="font-size: 11px; color: var(--text-light); margin-top: 3px;">
+                                    2026-09-15 19:01
+                                </div>
+                            </td>
+                            <td>
+                                <div style="font-weight: 600; color: var(--navy-dark);">
+                                    Ocean Pearl (Ceycat 55)
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted);">
+                                    Mirissa Blue Whale &amp; Dolphin Luxury Catamaran Safari
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-user-tie" style="color: var(--gold-primary); margin-right: 4px;"></i>
+                                Capt. Shantha Perera (Master Mariner)
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="badge badge-success">
+                                        <i class="fa-solid fa-gas-pump"></i> 100% Fuel
+                                    </span>
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                                    <i class="fa-solid fa-life-ring"></i> 30 SOLAS Vests
+                                </div>
+                            </td>
+                            <td>
+                                <div style="max-width: 250px; font-size: 13px; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Calm seas, swell 0.6m, visibility 15nm, clear skies">
+                                    Calm seas, swell 0.6m, visibility 15nm, clear skies
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge badge-success">
+                                    Ready for Departure
+                                </span>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px;">
+                                    <a href="/safety-checks/view?id=2" class="btn btn-outline-navy btn-sm" title="View Safety Certificate">
+                                        <i class="fa-solid fa-file-shield"></i> View
+                                    </a>
+                                    
+                                        <a href="/safety-checks/edit?id=2" class="btn btn-outline-gold btn-sm" title="Amend / Re-check">
+                                            <i class="fa-solid fa-pen"></i> Amend
+                                        </a>
+                                        <form method="POST" action="/safety-checks/void" style="display: inline;" onsubmit="return confirm('Are you sure you want to VOID this safety check?');">
+                                            <input type="hidden" name="csrf_token" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="csrfToken" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="id" value="2">
+                                            <button type="submit" class="btn btn-outline-danger btn-sm" title="Void Entry">
+                                                <i class="fa-solid fa-ban"></i> Void
+                                            </button>
+                                        </form>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <strong>#1</strong>
+                                <div style="font-size: 11px; color: var(--text-light); margin-top: 3px;">
+                                    2026-09-15 18:57
+                                </div>
+                            </td>
+                            <td>
+                                <div style="font-weight: 600; color: var(--navy-dark);">
+                                    Ocean Pearl (Ceycat 55)
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted);">
+                                    Mirissa Blue Whale &amp; Dolphin Luxury Catamaran Safari
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-user-tie" style="color: var(--gold-primary); margin-right: 4px;"></i>
+                                Capt. Shantha Perera (Master Mariner)
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="badge badge-success">
+                                        <i class="fa-solid fa-gas-pump"></i> 100% Fuel
+                                    </span>
+                                </div>
+                                <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                                    <i class="fa-solid fa-life-ring"></i> 30 SOLAS Vests
+                                </div>
+                            </td>
+                            <td>
+                                <div style="max-width: 250px; font-size: 13px; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="Calm seas, swell 0.6m, visibility 15nm, clear skies">
+                                    Calm seas, swell 0.6m, visibility 15nm, clear skies
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge badge-success">
+                                    Ready for Departure
+                                </span>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px;">
+                                    <a href="/safety-checks/view?id=1" class="btn btn-outline-navy btn-sm" title="View Safety Certificate">
+                                        <i class="fa-solid fa-file-shield"></i> View
+                                    </a>
+                                    
+                                        <a href="/safety-checks/edit?id=1" class="btn btn-outline-gold btn-sm" title="Amend / Re-check">
+                                            <i class="fa-solid fa-pen"></i> Amend
+                                        </a>
+                                        <form method="POST" action="/safety-checks/void" style="display: inline;" onsubmit="return confirm('Are you sure you want to VOID this safety check?');">
+                                            <input type="hidden" name="csrf_token" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="csrfToken" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="id" value="1">
+                                            <button type="submit" class="btn btn-outline-danger btn-sm" title="Void Entry">
+                                                <i class="fa-solid fa-ban"></i> Void
+                                            </button>
+                                        </form>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- Master Luxury Nautical Footer -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="site-logo" style="margin-bottom: 18px;">
+                <div class="logo-symbol">
+                    <i class="fa-solid fa-sailboat"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title" style="color: #FFFFFF;">SAIL LANKA</span>
+                    <span class="logo-tagline" style="color: var(--champagne-gold);">LUXURY OCEAN SAFARI</span>
+                </div>
+            </div>
+            <p>
+                Inspired by Sri Lanka's leading private sailing operator, Sail Lanka Charter. We curate world-class catamaran wildlife safaris, deep pelagic blue whale voyages, and romantic coastal expeditions across Sri Lanka's azure coastlines.
+            </p>
+            <p style="font-size: 12.5px; color: var(--champagne-gold);">
+                <i class="fa-solid fa-shield-halved"></i> Licensed by Sri Lanka Merchant Shipping Secretariat & Department of Wildlife Conservation.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Coastal Ports</h4>
+            <ul class="footer-links">
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Mirissa Harbour</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Galle International Port</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Trincomalee Cod Bay</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Bentota River Marina</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Passikudah Outer Bay</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="/experiences"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Safari Experiences</a></li>
+                <li><a href="/boats"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Catamaran Fleet</a></li>
+                <li><a href="/schedules"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Live Departures</a></li>
+                <li><a href="/promotions"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Special Offers</a></li>
+                <li><a href="/emergency"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Safety Advisories</a></li>
+                <li><a href="/login"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Staff Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>SE2030 Project Team</h4>
+            <p style="margin-bottom: 10px; font-weight: 600; color: #FFFFFF;">Group Y2-S1-MLB-B8G1-09</p>
+            <ul class="member-list">
+                <li><strong>Safari Tour Operations Manager</strong> (Member 1) - Safari Tour Management</li>
+                <li><strong>Reservation & Guest Booking Manager</strong> (Member 2) - Reservation Management</li>
+                <li><strong>Boat Fleet & Vessel Manager</strong> (Member 3) - Boat Fleet Management</li>
+                <li><strong>Boat Maintenance & Service Manager</strong> (Member 4) - Maintenance Management</li>
+                <li><strong>Maritime Safety & Emergency Notice Manager</strong> (Member 5) - Emergency Notices</li>
+                <li><strong>Promotion & Discount Strategy Manager</strong> (Member 6) - Promotion & Discounts</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        <div>
+            &copy; 2026 Web-Based Boat Safari Trip Management System | SLIIT Software Engineering. All rights reserved.
+        </div>
+        <div>
+            Built with Java Jakarta EE, JSTL, and Vanilla CSS & JS.
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/common.js"></script>
+</body>
+</html>
+

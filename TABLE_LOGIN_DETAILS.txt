@@ -1,0 +1,20 @@
+========================================================================================================================
+      Database: Microsoft SQL Server (SSMS) (boat_safari_db) | Live Connection Active
+      Total Records: 5 | Last Live Synced: 2026-09-21 19:15:27
+========================================================================================================================
+id         | user_id    | full_name            | email                | role       | ip_address      | status                            | login_time                  | user_agent           | details                
+-----------+------------+----------------------+----------------------+------------+-----------------+-----------------------------------+-----------------------------+----------------------+------------------------
+1          | 1          | System Administrator | admin@sail-safari.lk | ADMIN      | 127.0.0.1       | SUCCESS - SQL SERVER VERIFICATION | 2026-09-21 18:44:33.2766667 | Browser / Web Client | CRUD Testing Execution 
+2          | 1          | System Administrator | admin@sail-safari.lk | ADMIN      | 127.0.0.1       | SUCCESS - SQL SERVER VERIFICATION | 2026-09-21 18:45:20.7866667 | Browser / Web Client | CRUD Testing Execution 
+3          | 1          | System Administrator | admin@sail-safari.lk | ADMIN      | 127.0.0.1       | SUCCESS - SQL SERVER VERIFICATION | 2026-09-21 18:45:42.1133333 | Browser / Web Client | CRUD Testing Execution 
+4          | 1          | System Administrator | admin@sail-safari.lk | ADMIN      | 0:0:0:0:0:0:0:1 | SUCCESS                           | 2026-09-21 18:54:50.5200000 | Browser / Web Client | LOGIN_SUCCESS - SUCCESS
+5          | 1          | System Administrator | admin@sail-safari.lk | ADMIN      | 0:0:0:0:0:0:0:1 | SUCCESS                           | 2026-09-21 19:14:38.2933333 | Browser / Web Client | LOGIN_SUCCESS - SUCCESS
+-----------+------------+----------------------+----------------------+------------+-----------------+-----------------------------------+-----------------------------+----------------------+------------------------
+Total Rows: 5
+
+------------------------------------------------------------------------------------------------------------------------
+RECENT REAL-TIME TRANSACTIONS & AUDIT LOG:
+------------------------------------------------------------------------------------------------------------------------
+  [2026-09-21 19:14:38] INSERT   | Record #1     | Sign-in action=LOGIN_SUCCESS for System Administrator (admin@sail-safari.lk)
+  [2026-09-21 19:14:38] INSERT   | Record #5     | User 'System Administrator' (admin@sail-safari.lk) - Status: SUCCESS
+========================================================================================================================

@@ -1,0 +1,207 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sail Lanka | Luxury Ocean Safari & Catamaran Charters</title>
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Live Emergency Broadcast Ribbon -->
+<div id="emergencyRibbon" class="emergency-ribbon ">
+    <span class="pulse-dot"></span>
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <span id="emergencyRibbonText">
+        
+            
+            
+                Marine Advisory Broadcast System Active
+            
+        
+    </span>
+    <a href="/emergency" style="color: #FEF08A; text-decoration: underline; margin-left: 8px;">View All Alerts</a>
+</div>
+
+<!-- Floating Glassmorphic Master Navigation -->
+<header class="site-header">
+    <div class="container nav-wrapper">
+        <a href="/home" class="site-logo">
+            <div class="logo-symbol">
+                <i class="fa-solid fa-sailboat"></i>
+            </div>
+            <div class="logo-text">
+                <span class="logo-title">SAIL LANKA</span>
+                <span class="logo-tagline">LUXURY OCEAN SAFARI</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="/home"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="/experiences"><i class="fa-solid fa-compass"></i> Experiences</a></li>
+            <li><a href="/destinations"><i class="fa-solid fa-map-location-dot"></i> Destinations</a></li>
+            <li><a href="/boats"><i class="fa-solid fa-anchor"></i> Fleet</a></li>
+            <li><a href="/schedules"><i class="fa-regular fa-calendar-days"></i> Departures</a></li>
+            
+            <li><a href="/emergency"><i class="fa-solid fa-tower-broadcast"></i> Safety Alerts</a></li>
+            
+        </ul>
+
+        <div class="nav-actions">
+            <a href="/booking" class="btn btn-gold btn-sm">
+                <i class="fa-solid fa-ticket"></i> Book Cruise
+            </a>
+
+            
+                
+                
+                    <a href="/login" class="btn btn-outline-gold btn-sm">
+                        <i class="fa-solid fa-user"></i> Login
+                    </a>
+                
+            
+        </div>
+    </div>
+</header>
+
+<!-- Flash Alerts Container -->
+<div class="flash-container">
+    
+    
+</div>
+
+
+<div style="min-height: 85vh; display: flex; align-items: center; justify-content: center; padding: 120px 16px 60px 16px;">
+    <div class="card" style="width: 100%; max-width: 480px; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden;">
+        <div class="card-header" style="text-align: center; display: block; padding: 32px 24px 20px 24px; background: #FFFFFF; border-bottom: 1px solid var(--border-color);">
+            <div class="logo-symbol" style="margin: 0 auto 14px auto; width: 50px; height: 50px; font-size: 24px;">
+                <i class="fa-solid fa-anchor"></i>
+            </div>
+            <h2 style="font-size: 24px; color: var(--navy-primary); margin: 0; font-weight: 700;">Sign In to Sail Lanka</h2>
+            <p style="font-size: 13.5px; color: var(--text-muted); margin-top: 6px;">Universal access portal for tourists and operations crew</p>
+        </div>
+
+        <div class="card-body" style="padding: 28px 24px;">
+            <!-- Authentication Form with 2 Buttons: Login and Sign In -->
+            <form id="loginForm" action="/login" method="POST">
+                <input type="hidden" name="csrf_token" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                <input type="hidden" name="returnUrl" value="">
+
+                <div class="form-group" style="margin-bottom: 18px;">
+                    <label class="form-label" style="font-weight: 600; font-size: 13.5px; display: block; margin-bottom: 6px;">
+                        <i class="fa-solid fa-envelope" style="color: var(--champagne-gold); margin-right: 6px;"></i> Email Address
+                    </label>
+                    <input type="email" id="loginEmail" name="email" class="form-control" required placeholder="name@domain.com" style="width: 100%; padding: 11px 14px; border: 1px solid var(--border-color); border-radius: 6px; font-size: 14px;">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 22px;">
+                    <label class="form-label" style="font-weight: 600; font-size: 13.5px; display: block; margin-bottom: 6px;">
+                        <i class="fa-solid fa-lock" style="color: var(--champagne-gold); margin-right: 6px;"></i> Password
+                    </label>
+                    <input type="password" id="loginPassword" name="password" class="form-control" required placeholder="••••••••" style="width: 100%; padding: 11px 14px; border: 1px solid var(--border-color); border-radius: 6px; font-size: 14px;">
+                </div>
+
+                <!-- 2 Action Buttons: Login and Sign In -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px;">
+                    <button type="submit" id="loginBtn" class="btn btn-primary" style="width: 100%; padding: 12px 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14.5px;">
+                        <i class="fa-solid fa-right-to-bracket"></i> Login
+                    </button>
+                    <a href="/register" id="signInBtn" class="btn btn-outline-gold" style="width: 100%; padding: 12px 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; font-size: 14.5px;">
+                        <i class="fa-solid fa-user-plus"></i> Sign In
+                    </a>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted); margin-top: 10px; padding: 0 4px;">
+                    <span>Have an account? Click <strong>Login</strong></span>
+                    <span>New customer? Click <strong>Sign In</strong></span>
+                </div>
+            </form>
+        </div>
+
+        <div class="card-footer" style="text-align: center; font-size: 13.5px; background: #F8FAFC; padding: 18px; border-top: 1px solid var(--border-color);">
+            Don't have an account yet? <a href="/register" style="font-weight: 700; color: var(--navy-primary); text-decoration: underline;">Click Sign In to create an account</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Master Luxury Nautical Footer -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="site-logo" style="margin-bottom: 18px;">
+                <div class="logo-symbol">
+                    <i class="fa-solid fa-sailboat"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title" style="color: #FFFFFF;">SAIL LANKA</span>
+                    <span class="logo-tagline" style="color: var(--champagne-gold);">LUXURY OCEAN SAFARI</span>
+                </div>
+            </div>
+            <p>
+                Inspired by Sri Lanka's leading private sailing operator, Sail Lanka Charter. We curate world-class catamaran wildlife safaris, deep pelagic blue whale voyages, and romantic coastal expeditions across Sri Lanka's azure coastlines.
+            </p>
+            <p style="font-size: 12.5px; color: var(--champagne-gold);">
+                <i class="fa-solid fa-shield-halved"></i> Licensed by Sri Lanka Merchant Shipping Secretariat & Department of Wildlife Conservation.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Coastal Ports</h4>
+            <ul class="footer-links">
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Mirissa Harbour</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Galle International Port</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Trincomalee Cod Bay</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Bentota River Marina</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Passikudah Outer Bay</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="/experiences"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Safari Experiences</a></li>
+                <li><a href="/boats"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Catamaran Fleet</a></li>
+                <li><a href="/schedules"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Live Departures</a></li>
+                <li><a href="/promotions"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Special Offers</a></li>
+                <li><a href="/emergency"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Safety Advisories</a></li>
+                <li><a href="/login"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Staff Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>SE2030 Project Team</h4>
+            <p style="margin-bottom: 10px; font-weight: 600; color: #FFFFFF;">Group Y2-S1-MLB-B8G1-09</p>
+            <ul class="member-list">
+                <li><strong>Safari Tour Operations Manager</strong> (Member 1) - Safari Tour Management</li>
+                <li><strong>Reservation & Guest Booking Manager</strong> (Member 2) - Reservation Management</li>
+                <li><strong>Boat Fleet & Vessel Manager</strong> (Member 3) - Boat Fleet Management</li>
+                <li><strong>Boat Maintenance & Service Manager</strong> (Member 4) - Maintenance Management</li>
+                <li><strong>Maritime Safety & Emergency Notice Manager</strong> (Member 5) - Emergency Notices</li>
+                <li><strong>Promotion & Discount Strategy Manager</strong> (Member 6) - Promotion & Discounts</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        <div>
+            &copy; 2026 Web-Based Boat Safari Trip Management System | SLIIT Software Engineering. All rights reserved.
+        </div>
+        <div>
+            Built with Java Jakarta EE, JSTL, and Vanilla CSS & JS.
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/common.js"></script>
+</body>
+</html>
+

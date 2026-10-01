@@ -1,0 +1,359 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sail Lanka | Luxury Ocean Safari & Catamaran Charters</title>
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Live Emergency Broadcast Ribbon -->
+<div id="emergencyRibbon" class="emergency-ribbon ">
+    <span class="pulse-dot"></span>
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <span id="emergencyRibbonText">
+        
+            
+            
+                Marine Advisory Broadcast System Active
+            
+        
+    </span>
+    <a href="/emergency" style="color: #FEF08A; text-decoration: underline; margin-left: 8px;">View All Alerts</a>
+</div>
+
+<!-- Floating Glassmorphic Master Navigation -->
+<header class="site-header">
+    <div class="container nav-wrapper">
+        <a href="/home" class="site-logo">
+            <div class="logo-symbol">
+                <i class="fa-solid fa-sailboat"></i>
+            </div>
+            <div class="logo-text">
+                <span class="logo-title">SAIL LANKA</span>
+                <span class="logo-tagline">LUXURY OCEAN SAFARI</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="/home"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="/experiences"><i class="fa-solid fa-compass"></i> Experiences</a></li>
+            <li><a href="/destinations"><i class="fa-solid fa-map-location-dot"></i> Destinations</a></li>
+            <li><a href="/boats"><i class="fa-solid fa-anchor"></i> Fleet</a></li>
+            <li><a href="/schedules"><i class="fa-regular fa-calendar-days"></i> Departures</a></li>
+            
+                <li><a href="/safety-checks"><i class="fa-solid fa-clipboard-check"></i> Safety Checks</a></li>
+            
+            <li><a href="/emergency"><i class="fa-solid fa-tower-broadcast"></i> Safety Alerts</a></li>
+            
+                <li><a href="/admin/dashboard" style="color: var(--champagne-gold); font-weight: 700;"><i class="fa-solid fa-gauge-high"></i> Back-Office</a></li>
+            
+        </ul>
+
+        <div class="nav-actions">
+            <a href="/booking" class="btn btn-gold btn-sm">
+                <i class="fa-solid fa-ticket"></i> Book Cruise
+            </a>
+
+            
+                
+                    
+                    <a href="/profile" class="user-pill" title="View Account">
+                        <i class="fa-solid fa-user-circle"></i>
+                        <span>System Administrator</span>
+                    </a>
+                    <a href="/logout" class="btn btn-outline-gold btn-sm" title="Log Out">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </a>
+                
+                
+            
+        </div>
+    </div>
+</header>
+
+<!-- Flash Alerts Container -->
+<div class="flash-container">
+    
+        <div class="alert alert-success">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Tour successfully deleted.</span>
+            <button onclick="this.parentElement.remove()" style="background:none; border:none; color:inherit; cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+    
+    
+</div>
+
+
+<div style="background: var(--navy-dark); padding: 120px 0 40px 0; color: #FFFFFF;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <div>
+            <div style="color: var(--champagne-gold); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;">
+                Member 1: Safari Tour & Schedule Management
+            </div>
+            <h1 style="font-size: 32px; color: #FFFFFF; margin-top: 4px;">Safari Tour Management</h1>
+            <p style="color: #94A3B8;">Create, update, schedule, and manage safari tours, routes, and packages.</p>
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <a href="/admin/schedules" class="btn btn-outline-gold btn-sm">
+                <i class="fa-regular fa-calendar-days"></i> View Schedules
+            </a>
+            <a href="/admin/tours/create" class="btn btn-gold btn-sm">
+                <i class="fa-solid fa-plus"></i> Create New Tour
+            </a>
+        </div>
+    </div>
+</div>
+
+<section class="section" style="padding: 40px 0;">
+    <div class="container">
+        <!-- Search & Filter Form -->
+        <div class="card" style="margin-bottom: 24px; padding: 18px 24px; background: var(--surface-card);">
+            <form action="/tours" method="GET" style="display: flex; gap: 16px; align-items: flex-end; flex-wrap: wrap;">
+                <div style="flex: 2; min-width: 240px;">
+                    <label class="form-label" style="font-size: 13px; margin-bottom: 6px;">Search Tours & Keywords</label>
+                    <input type="text" name="q" value="" class="form-control" placeholder="Search by title, highlights, whale watching..." />
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <label class="form-label" style="font-size: 13px; margin-bottom: 6px;">Filter by Category</label>
+                    <select name="type" class="form-control">
+                        <option value="">All Safari Categories</option>
+                        
+                            <option value="WHALE_WATCHING" >Blue Whale & Dolphin Safari</option>
+                        
+                            <option value="DAYLIGHT_CRUISE" >Daylight Coastal Sail</option>
+                        
+                            <option value="SUNSET_SAIL" >Sunset Champagne Sail</option>
+                        
+                            <option value="OVERNIGHT_CHARTER" >Multi-Day Yacht Charter</option>
+                        
+                            <option value="SNORKELING_SAFARI" >Coral Reef & Marine Safari</option>
+                        
+                            <option value="DINE_AT_SEA" >Starlight Dine-at-Sea</option>
+                        
+                    </select>
+                </div>
+                <div style="display: flex; gap: 8px;">
+                    <button type="submit" class="btn btn-navy">
+                        <i class="fa-solid fa-magnifying-glass"></i> Search
+                    </button>
+                    
+                </div>
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Tour ID</th>
+                            <th>Tour Title</th>
+                            <th>Category</th>
+                            <th>Duration</th>
+                            <th>Base Price</th>
+                            <th>Max Pax</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            <tr>
+                                <td>#4</td>
+                                <td>
+                                    <strong><a href="/tours/view?id=4">Private Starlight Dine-at-Sea Yacht Experience</a></strong>
+                                </td>
+                                <td><span class="badge badge-primary">Starlight Dine-at-Sea</span></td>
+                                <td>4.0 hrs</td>
+                                <td><strong>LKR 65,000.00</strong></td>
+                                <td>10 guests</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <div style="display: flex; gap: 6px;">
+                                        <a href="/admin/tours/edit?id=4" class="btn btn-outline-navy btn-sm" title="Edit">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                        <form action="/admin/tours/delete" method="POST" onsubmit="return confirm('Are you sure you want to delete this tour?');" style="display: inline;">
+                                            <input type="hidden" name="csrf_token" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="csrfToken" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="id" value="4">
+                                            <button type="submit" class="btn btn-danger btn-sm" title="Delete">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>#3</td>
+                                <td>
+                                    <strong><a href="/tours/view?id=3">Trincomalee Pigeon Island Reef Snorkeling Safari</a></strong>
+                                </td>
+                                <td><span class="badge badge-primary">Coral Reef & Marine Safari</span></td>
+                                <td>5.0 hrs</td>
+                                <td><strong>LKR 29,000.00</strong></td>
+                                <td>22 guests</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <div style="display: flex; gap: 6px;">
+                                        <a href="/admin/tours/edit?id=3" class="btn btn-outline-navy btn-sm" title="Edit">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                        <form action="/admin/tours/delete" method="POST" onsubmit="return confirm('Are you sure you want to delete this tour?');" style="display: inline;">
+                                            <input type="hidden" name="csrf_token" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="csrfToken" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="id" value="3">
+                                            <button type="submit" class="btn btn-danger btn-sm" title="Delete">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>#2</td>
+                                <td>
+                                    <strong><a href="/tours/view?id=2">Galle Fort Heritage & Sunset Champagne Sail</a></strong>
+                                </td>
+                                <td><span class="badge badge-primary">Sunset Champagne Sail</span></td>
+                                <td>3.0 hrs</td>
+                                <td><strong>LKR 18,500.00</strong></td>
+                                <td>20 guests</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <div style="display: flex; gap: 6px;">
+                                        <a href="/admin/tours/edit?id=2" class="btn btn-outline-navy btn-sm" title="Edit">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                        <form action="/admin/tours/delete" method="POST" onsubmit="return confirm('Are you sure you want to delete this tour?');" style="display: inline;">
+                                            <input type="hidden" name="csrf_token" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="csrfToken" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="id" value="2">
+                                            <button type="submit" class="btn btn-danger btn-sm" title="Delete">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>#1</td>
+                                <td>
+                                    <strong><a href="/tours/view?id=1">Mirissa Blue Whale & Dolphin Luxury Catamaran Safari</a></strong>
+                                </td>
+                                <td><span class="badge badge-primary">Blue Whale & Dolphin Safari</span></td>
+                                <td>4.5 hrs</td>
+                                <td><strong>LKR 24,500.00</strong></td>
+                                <td>25 guests</td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>
+                                    <div style="display: flex; gap: 6px;">
+                                        <a href="/admin/tours/edit?id=1" class="btn btn-outline-navy btn-sm" title="Edit">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                        <form action="/admin/tours/delete" method="POST" onsubmit="return confirm('Are you sure you want to delete this tour?');" style="display: inline;">
+                                            <input type="hidden" name="csrf_token" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="csrfToken" value="TyGnxsVbPZFsOs-ZjZ4gTjHUCvo2aA1I">
+                                            <input type="hidden" name="id" value="1">
+                                            <button type="submit" class="btn btn-danger btn-sm" title="Delete">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Master Luxury Nautical Footer -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="site-logo" style="margin-bottom: 18px;">
+                <div class="logo-symbol">
+                    <i class="fa-solid fa-sailboat"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title" style="color: #FFFFFF;">SAIL LANKA</span>
+                    <span class="logo-tagline" style="color: var(--champagne-gold);">LUXURY OCEAN SAFARI</span>
+                </div>
+            </div>
+            <p>
+                Inspired by Sri Lanka's leading private sailing operator, Sail Lanka Charter. We curate world-class catamaran wildlife safaris, deep pelagic blue whale voyages, and romantic coastal expeditions across Sri Lanka's azure coastlines.
+            </p>
+            <p style="font-size: 12.5px; color: var(--champagne-gold);">
+                <i class="fa-solid fa-shield-halved"></i> Licensed by Sri Lanka Merchant Shipping Secretariat & Department of Wildlife Conservation.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Coastal Ports</h4>
+            <ul class="footer-links">
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Mirissa Harbour</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Galle International Port</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Trincomalee Cod Bay</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Bentota River Marina</a></li>
+                <li><a href="/destinations"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Passikudah Outer Bay</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="/experiences"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Safari Experiences</a></li>
+                <li><a href="/boats"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Catamaran Fleet</a></li>
+                <li><a href="/schedules"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Live Departures</a></li>
+                <li><a href="/promotions"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Special Offers</a></li>
+                <li><a href="/emergency"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Safety Advisories</a></li>
+                <li><a href="/login"><i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i> Staff Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>SE2030 Project Team</h4>
+            <p style="margin-bottom: 10px; font-weight: 600; color: #FFFFFF;">Group Y2-S1-MLB-B8G1-09</p>
+            <ul class="member-list">
+                <li><strong>Safari Tour Operations Manager</strong> (Member 1) - Safari Tour Management</li>
+                <li><strong>Reservation & Guest Booking Manager</strong> (Member 2) - Reservation Management</li>
+                <li><strong>Boat Fleet & Vessel Manager</strong> (Member 3) - Boat Fleet Management</li>
+                <li><strong>Boat Maintenance & Service Manager</strong> (Member 4) - Maintenance Management</li>
+                <li><strong>Maritime Safety & Emergency Notice Manager</strong> (Member 5) - Emergency Notices</li>
+                <li><strong>Promotion & Discount Strategy Manager</strong> (Member 6) - Promotion & Discounts</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        <div>
+            &copy; 2026 Web-Based Boat Safari Trip Management System | SLIIT Software Engineering. All rights reserved.
+        </div>
+        <div>
+            Built with Java Jakarta EE, JSTL, and Vanilla CSS & JS.
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/common.js"></script>
+</body>
+</html>
+

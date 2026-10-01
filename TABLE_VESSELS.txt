@@ -1,0 +1,19 @@
+========================================================================================================================
+      Database: Microsoft SQL Server (SSMS) (boat_safari_db) | Live Connection Active
+      Total Records: 5 | Last Live Synced: 2026-09-21 19:15:27
+========================================================================================================================
+id         | name                        | registration_no | vessel_type | capacity   | cabins     | engines                        | cruising_speed_knots | status            | owner_id   | image_url                           | safety_equipment_notes                                       | created_at                 
+-----------+-----------------------------+-----------------+-------------+------------+------------+--------------------------------+----------------------+-------------------+------------+-------------------------------------+--------------------------------------------------------------+----------------------------
+1          | Ocean Pearl (Ceycat 55)     | SLC-CAT-001     | CATAMARAN   | 30         | 4          | Twin 75HP Yanmar Marine Diesel | 9.5                  | AVAILABLE         | 8          | assets/img/fleet/ocean-pearl.jpg    | Drydock completed                                            | 2026-09-21 18:27:20.3033333
+2          | Sapphire Blue (Topaz 48)    | SLC-CAT-002     | CATAMARAN   | 25         | 3          | Twin 55HP Volvo Penta          | 8.5                  | UNDER_MAINTENANCE | 8          | assets/img/fleet/sapphire-blue.jpg  | Slipway inspection and maintenance                           | 2026-09-21 18:27:20.3033333
+3          | Ceylon Monarch (Majesty 62) | SLC-YACHT-003   | YACHT       | 15         | 3          | Twin 800HP MAN Marine Diesel   | 18.0                 | AVAILABLE         | 8          | assets/img/fleet/ceylon-monarch.jpg | SOLAS life jackets x20, Life raft x1 (capacity 20), Radar... | 2026-09-21 18:27:20.3033333
+4          | Wave Runner (SeaRay 32)     | SLC-SPD-004     | SPEEDBOAT   | 12         | 0          | Twin 250HP Yamaha Outboards    | 28.0                 | UNDER_MAINTENANCE | 8          | assets/img/fleet/wave-runner.jpg    | Slipway inspection and maintenance                           | 2026-09-21 18:27:20.3033333
+5          | Mirissa Sun (Lagoon 42)     | SLC-CAT-005     | CATAMARAN   | 20         | 4          | Twin 45HP Yanmar               | 8.0                  | AVAILABLE         | 8          | assets/img/fleet/mirissa-sun.jpg    | Slipway inspection and maintenance                           | 2026-09-21 18:27:20.3033333
+-----------+-----------------------------+-----------------+-------------+------------+------------+--------------------------------+----------------------+-------------------+------------+-------------------------------------+--------------------------------------------------------------+----------------------------
+Total Rows: 5
+
+------------------------------------------------------------------------------------------------------------------------
+RECENT REAL-TIME TRANSACTIONS & AUDIT LOG:
+------------------------------------------------------------------------------------------------------------------------
+  (Waiting for live transactions / operations...)
+========================================================================================================================
